@@ -7,6 +7,8 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
+//Clock Angle Shortcodes
+include(WP_CONTENT_DIR . '/custom_plugin/custom_plugin.php');
 // Remove all Comments
 // Disable support for comments and trackbacks in post types
 function df_disable_comments_post_types_support() {
