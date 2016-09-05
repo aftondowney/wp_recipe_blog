@@ -1,23 +1,13 @@
 <?php
 function clock_angle_form() {
-  $form['hour'] = array(
-      '#title' => 'Hour',
-      '#type' => 'textfield',
-      // '#element_validate' => array('element_validate_integer_positive'),
-      '#description' => t("Enter an hour between 1 and 12"),
-  );
-  $form['minute'] = array(
-      '#title' => 'Minutes',
-      '#type' => 'textfield',
-      // '#element_validate' => array('element_validate_integer_positive'),
-      '#required' => TRUE,
-      '#description' => t("Enter minutes between  0 and 60"),
-  );
-  $form['submit'] = array(
-      '#type' => 'submit',
-      '#value' => 'Calculate Angle',
-  );
-  return $form;
+  ?>
+  <form name="clockform" method="POST" onsubmit="return form_validation()" action="../customer-details.php">
+  Your Name: <input type="text" id="customer_name" name="customer_name" /><br />
+  Your Email: <input type="text" id="customer_email" name="customer_email" /><br />
+  Sex: <input type="radio" name="customer_sex" value="male">Male <input type="radio" name="customer_sex" value="female">Female<br />
+  Your Age: <input type="text" id="customer_age" name="customer_age" /><br />
+  <input type="submit" value="Submit"/>
+  </form>
 }
 
 function clock_angle_form_submit($form, &$form_state) {
