@@ -7,37 +7,12 @@
  Template:       twentysixteen
  Version:        1.0.0
 */
- 
+
 /* Add Custom CSS after this line */
-
-/* Demo Johnson Box code courtesy of: http://hyperlinkcode.com/blog/html-johnson-box/ */
-
-.johnson1 {
-	padding: 20px;
-	background: #ffff99;
-	width: 90%;
-	margin: 20px auto;
+header.site-header {
+  padding: 25px;
 }
-.johnson6 {
-	padding: 20px;
-	background: #ffff99;
-	width: 90%;
-	margin: 20px auto;
-	border: 3px dashed #ee0000;
-}
-.johnson8 {
-	padding: 20px;
-	background: #ccffcc;
-	width: 90%;
-	margin: 20px auto;
-	border-left: 5px solid #ff8080;
-}
-
-/* Other Sample Code */
-
-.warning {
-	color: red;
-}
-.shadow {
-	box-shadow: 0 8px 8px -6px #333;
+.site-title {
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
 }

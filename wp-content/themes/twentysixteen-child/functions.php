@@ -16,3 +16,19 @@ function my_get_posts($query) {
 
     return $query;
 }
+
+function twentysixteen_fonts_url() {
+  $fonts_url = '';
+  $fonts = array();
+  $subsets = 'latin,latin-ext';
+
+  $fonts[] = '';
+
+  if ($fonts) {
+    $fonts_url = add_query_arg(array(
+      'family' => urlencode(implode('I', $fonts)),
+      'subset' => urlencode($subsets),
+    ), 'https://fonts.googleapis.com/css');
+  }
+  return $fonts_url
+}
